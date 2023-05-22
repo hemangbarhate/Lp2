@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAD 6</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        .table {
+            border-radius: 25px;
+            border: solid;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form">
+        <table style="justify-content: center; display: flex;">
+            <tr>
+                <td><label for="input1">Input1 : </label></td>
+                <td><input type="text" name="input1" id="input1" placeholder="Input1">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="input1">Input2 : </label></td>
+                <td><input type="text" name="input2" id="input2" placeholder="Input2"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="btn" class="btn btn-success" type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <h3>Table 1</h3>
+        <table id="table1" class="table"></table>
+
+        <h3>Table 2</h3>
+        <table id="table2" class="table"></table>
+
+        <h3>Table 3</h3>
+        <table id="res" class="table"></table>
+
+    </div>
+
+
+    <script src="./mytable.js"></script>
+
+</body>
+
+</html>
