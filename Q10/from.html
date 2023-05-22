@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+   th{
+    background-color:rgb(241, 241, 162);
+    color: red;
+   }
+   td{
+    background-color: aqua;
+   }
+</style>
+<body>
+    <center>
+        <form>
+            <table border="2px">
+                <tr>
+                    <th colspan="2">User Form</th>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td ><input type="password" name="password" id="passsword"></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea name="address"id="address" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox">Hockey
+                        <br>
+                        <input type="checkbox">Football
+                        <br>
+                        <input type="checkbox">Badminton
+                        <br>
+                        <input type="checkbox">Cricket
+                        <br>
+                        <input type="checkbox">VolleyBall
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="male">Male
+                        <input type="radio" name="gender" id="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Your Age</td>
+                    <td style="text-align: center;">
+                        <select name="age" id="age" >
+                            <option value="selected">Select</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button>Click Me</button>
+                        <button>Reset</button>
+                        <button>Submit Form</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

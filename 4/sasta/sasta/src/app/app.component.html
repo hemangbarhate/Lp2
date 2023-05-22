@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+
+<form>
+  <input type="text" #name placeholder="Enter Your Name">
+  <input type="text" #email placeholder="Enter Your Email">
+  <input type="text" #phone placeholder="Enter Your phone">
+  <input type="text" #password placeholder="Enter Your Password">
+
+</form>
+<button (click)="register(name.value,email.value,phone.value,password.value)">Register</button>
+
+<h3>Name : {{rname}}</h3>
+<h3>Email : {{remail}}</h3>
+<h3>Phone : {{rphone}}</h3>
+<hr>
+
+<h2>Login</h2>
+<form>
+  <input type="text" #name2 placeholder="Enter Your Name">
+  <input type="text" #password2 placeholder="Enter Your Name">
+</form>
+<button (click)="login(name2.value,password2.value)">Login</button>
+
+<h3>Result : {{result}}</h3>
+<hr>
+
+<h2>Profile</h2>
+<h3>Name : {{name3}}</h3>
+<h3>Email : {{email3}}</h3>
+<h3>Phone : {{phone3}}</h3>
+<h3>Result : {{result3}}</h3>
