@@ -6,29 +6,14 @@
 </head>
 
 <body>
-    <h1 id="error_head" style="display: none" value="{{error}}">
-        {{error}}
-    </h1>
-    <div class="card">
-        <h2 class="weatherText">Weather App Using WebApp</h2>
 
-        <form class="weatherText" id="weatherForm" action="/" method="post">
-            Latitude:
-            <input id="weatherInput" type="text" name="latitude" /><br />
+    <form action="/" method="post">
+        <input type="number" name="latitude" id="latitude" step="0.01" required>
+        <input type="number" name="longitude" id="longitude" step="0.01" required>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
 
-            Longitude:
-            <input id="weatherInput" type="text" name="longitude" /><br />
-
-            Daily:
-            <input id="weatherInput" type="text" name="daily" /><br />
-            Hourly:
-            <input id="weatherInput" type="text" name="hourly" /><br />
-            Timezone:
-            <input id="weatherInput" type="text" name="timezone" /><br />
-
-            <input id="weatherSubmit" type="submit" value="Submit" />
-        </form>
-    </div>
 </body>
 
 </html>
