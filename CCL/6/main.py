@@ -12,6 +12,6 @@ class HomePage(webapp2.RequestHandler):
             self.response.write("\n")
             num1 = num2
             num2 = new
-            i=i+1;
+            i=i+1
 
 app = webapp2.WSGIApplication([("/",HomePage)],debug = True)
